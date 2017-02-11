@@ -10,6 +10,10 @@ public class FollowCamera : MonoBehaviour {
 
     private void LateUpdate()
     {
-        transform.position = Target.position + Vector3.up * _Height - Vector3.forward * _Dist;
+        if (Target != null)
+        {
+            transform.LookAt(Target);
+            transform.position = Target.position + Vector3.up * _Height - Vector3.forward * _Dist;
+        }
     }
 }

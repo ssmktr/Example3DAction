@@ -6,6 +6,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
 
     protected Animator avatar;
+
+
     float _LastAttackTime, _LastSkillTime, _LastDashTime;
     public bool _IsAttacking = false;
     public bool _IsDashing = false;
